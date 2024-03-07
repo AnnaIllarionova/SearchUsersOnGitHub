@@ -57,12 +57,14 @@ export const MainPage = () => {
         ) : (
           <>
             <UsersList userData={userData} />
-            <ReposOrderComponent setReposOrder={setReposOrder} />
+            <ReposOrderComponent
+              setReposOrder={setReposOrder}
+              setChosenButton={setChosenButton}
+              chosenButton={chosenButton}
+            />
             <ElementsPerPage
               setPerPage={setPerPage}
               setCurrentPage={setCurrentPage}
-              setChosenButton={setChosenButton}
-              chosenButton={chosenButton}
             />
             <NumberOfPages
               userData={userData}
